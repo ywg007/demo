@@ -14,4 +14,26 @@ public class UserServiceImpl implements UserService {
     public int add(User user) {
         return userMapper.insert(user);
     }
+//       tgg
+    @Override
+    public int insert(User user) {
+        return userMapper.insert(user);
+    }
+
+    @Override
+    public int delete(User user) {
+        return userMapper.deleteByPrimaryKey(user.getUserId());
+    }
+
+    @Override
+    public int updata(User user) {
+        return userMapper.updateByPrimaryKey(user);
+    }
+
+    @Override
+    public User select(User user) {
+        return userMapper.selectByPrimaryKey(user.getUserId());
+    }
+
+
 }

@@ -8,7 +8,7 @@ public class User {
     private String password;
 
     private Integer age;
-private int a;
+
 
     public User(Long userId, String userName, String password, Integer age) {
         this.userId = userId;
